@@ -4,7 +4,9 @@ const ListForm = props => {
   // console.log("this is our props",props);
   const [list, setList] = useState({
     name: "",
-    home: ""
+    home: "",
+    email: "",
+    role: ""
   });
   // onChange handler to control inputs
   const handleChanges = event => {
@@ -16,7 +18,7 @@ const ListForm = props => {
   const submitForm = e => {
     e.preventDefault();
     props.addNewList(list);
-    setList({ name: "", home: "" });
+    setList({ name: "", home: "", email: "", role: "" });
   };
   return (
     <form onSubmit={submitForm}>
@@ -30,12 +32,28 @@ const ListForm = props => {
         value={list.name}
       />
       <label htmlFor="home">Location</label>
-      <textarea
+      <input
         id="home"
         name="home"
         onChange={handleChanges}
         placeholder="Location"
         value={list.home}
+      />
+      <label htmlFor="email">Email</label>
+      <input 
+        id="email"
+        name="email"
+        onChange={handleChanges}
+        placeholder="Email"
+        value={list.email}
+      />
+      <label htmlFor="role">Role</label>
+      <input 
+        id="role"
+        name="role"
+        onChange={handleChanges}
+        placeholder="Role"
+        value={list.role}
       />
       <button type="submit">Add To List</button>
     </form>

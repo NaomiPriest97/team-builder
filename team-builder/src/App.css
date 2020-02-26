@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #FFB6C1;
+
 }
 
 .App-logo {
@@ -35,4 +37,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1{
+  color: blueviolet;
+}
+h2{
+  color: #00CED1;
+}
+p{
+  color:olivedrab;
+}
+form{
+  color:seagreen;
+  display:flex;
+  justify-content:space-evenly;
+}
+input{
+  background-color:lightgoldenrodyellow;
+  border-radius:20px;
+  color: lightseagreen;
 }
