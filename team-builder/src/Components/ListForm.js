@@ -27,7 +27,7 @@ const ListForm = props => {
         type="text"
         onChange={handleChanges}
         placeholder="Name"
-        value={note.name}
+        value={list.name}
       />
       <label htmlFor="home">Location</label>
       <textarea
@@ -35,7 +35,7 @@ const ListForm = props => {
         name="home"
         onChange={handleChanges}
         placeholder="Location"
-        value={note.home}
+        value={list.home}
       />
       <button type="submit">Add To List</button>
     </form>
