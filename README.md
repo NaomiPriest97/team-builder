@@ -22,7 +22,7 @@ In this project you'll build an app that will keep track of memebers of a team. 
 - [ ] Use `npx create-react-app team-builder` or `create-react-app team-builder` to initiate the project.
 - [ ] CD into your `team-builder` directory
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.cd
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
